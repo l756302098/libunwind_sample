@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+*/build/
+libunwind-1.8.1.zip
+.vscode/
+libunwind-1.8.1

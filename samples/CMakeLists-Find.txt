@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.5)
+
+# Set the project name
+project (unwind_samples)
+
+include(FindUnwind.cmake)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g ")
+
+# find_package(unwind REQUIRED)
+include_directories(${Unwind_INCLUDE_DIR})
+
+add_executable(unwind_samples main.cpp)
+message(${Unwind_LIBRARY})
+target_link_libraries(unwind_samples ${Unwind_LIBRARY} unwind-x86_64)

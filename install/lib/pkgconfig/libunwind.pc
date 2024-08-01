@@ -1,0 +1,11 @@
+prefix=/home/li/workspaces/libunwind_sample/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libunwind
+Description: libunwind base library
+Version: 1.8.1
+Libs: -L${libdir} -lunwind
+Libs.private: -llzma -lz
+Cflags: -I${includedir}
